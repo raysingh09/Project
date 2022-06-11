@@ -40,9 +40,6 @@ class Welcome : AppCompatActivity() {
             binding.longitude.text = "Longitude :- $long"
         }
 
-//        Handler(Looper.getMainLooper()).postDelayed({
-//        }, 300000)
-
         binding.exportDatabase.setOnClickListener {
             val latlong = binding.longitude.text.toString() + binding.latitude.text.toString()
             val FILE_NAME = "latlong.txt";
